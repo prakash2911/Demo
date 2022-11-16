@@ -156,5 +156,5 @@ def text(message):
         emit('message', {'msg': message['msg'],'utype':utype,'emotion':1,'id':str(uuid.uuid1()),'performance':message['performance']},to = room,namespace="/chat")
 
 
-app.run('0.0.0.0',port=2003,debug=True)
+app.run(port=2003,debug=True)
 socketio.run(app)
